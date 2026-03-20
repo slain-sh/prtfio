@@ -77,7 +77,6 @@ main {
     font-size: var(--font-size-fluid-1);
   }
   p {
-    max-width: var(--size-content-2);
     margin-block: var(--size-2);
     text-align: justify;
     text-align-last: end;
@@ -93,9 +92,15 @@ main {
 }
 
 @media (max-width: 480px) or (orientation: portrait) {
+  body {
+    padding: var(--size-fluid-3);
+  }
   main {
     h3 {
       font-size: var(--font-size-8);
+    }
+    h6 {
+      font-size: var(--font-size-3);
     }
     nav {
       gap: var(--size-4);
