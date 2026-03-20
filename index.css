@@ -28,9 +28,9 @@ body {
   background-image:
     linear-gradient(
       180deg in oklch,
-      rgba(0, 0, 0, 0.2) 0%,
-      rgba(38, 38, 38, 0.6) 36%,
-      rgba(22, 22, 22, 0.88) 69%,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(38, 38, 38, 0.4) 36%,
+      rgba(22, 22, 22, 0.66) 69%,
       rgba(0, 0, 0, 0.91) 84%,
       rgba(0, 0, 0, 1) 100%
     ),
@@ -43,8 +43,8 @@ body {
   background-size: cover;
   font-family: "Violet Sans", var(--font-neo-grotesque);
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  width: 100dvw;
+  height: 100dvh;
   align-items: end;
   justify-content: end;
   color: var(--text-1);
@@ -55,11 +55,10 @@ main {
   flex-direction: column;
   align-items: end;
   gap: var(--size-1);
-  text-align: justify;
-  text-align-last: end;
   max-width: var(--size-content-3);
   font-size: calc(var(--font-size-fluid-1) * 0.85);
   text-shadow: 0 var(--size-1) var(--size-5) #ffffff5a;
+  text-align: end;
   * {
     transition:
       opacity 0.4s ease-in-out,
@@ -78,7 +77,10 @@ main {
     font-size: var(--font-size-fluid-1);
   }
   p {
+    max-width: var(--size-content-2);
     margin-block: var(--size-2);
+    text-align: justify;
+    text-align-last: end;
   }
   nav {
     a {
@@ -94,10 +96,6 @@ main {
   main {
     h3 {
       font-size: var(--font-size-8);
-    }
-    p {
-      text-align: end;
-      max-width: 72dvw;
     }
     nav {
       gap: var(--size-4);
